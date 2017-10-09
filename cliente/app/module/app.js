@@ -14,6 +14,8 @@ var rotas_1 = require("../rotas/rotas");
 var componente_1 = require("../componente/componente");
 //import { ListagemComponente } from '../listaNotas/notas.componente';
 var lista_module_1 = require("../listaNotas/lista.module");
+var ng2_pdf_viewer_1 = require("ng2-pdf-viewer");
+var platform_browser_dynamic_1 = require("@angular/platform-browser-dynamic");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -25,11 +27,12 @@ var AppModule = /** @class */ (function () {
                 rotas_1.routing,
                 lista_module_1.ListaModule
             ],
-            declarations: [componente_1.AppComponent],
+            declarations: [componente_1.AppComponent, ng2_pdf_viewer_1.PdfViewerComponent],
             bootstrap: [componente_1.AppComponent]
         })
     ], AppModule);
     return AppModule;
 }());
 exports.AppModule = AppModule;
+platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(AppModule);
 //# sourceMappingURL=app.js.map
