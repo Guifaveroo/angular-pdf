@@ -15,5 +15,5 @@ import {Component} from '@angular/core';
   })
 
 export class PDFComponent{
-    pdfSrc: string = '/35090408196295000125550010000000390791067451_NFe_Env.pdf';
+    pdfSrc: string = 'nomedoPDF';
 }
